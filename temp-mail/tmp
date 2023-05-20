@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .responsive {
+            background: grey;
+            padding: 1rem;
+            border-radius: 5px;
+            color: chartreuse;
+            font-size: 2rem;
+            width: calc(80vw - 5%);
+            margin: 5rem auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btnContainer {
+            background: pink;
+            padding: .5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: flex-end;
+        }
+
+        .btnContainer>button,
+        .btn {
+            font-size: 2rem;
+            padding: .5rem;
+            border-radius: 5px;
+        }
+
+        .btnContainer>button:hover,
+        .btn:hover,
+        .btn:active {
+            background: greenyellow;
+            color: black;
+            box-shadow: 0 0 15px azure;
+        }
+
+        /* sender Details */
+        .senderCont {
+            background: grey;
+            padding: 1rem;
+            border-radius: 5px;
+            color: chartreuse;
+            font-size: 2rem;
+            width: calc(80vw - 5%);
+            margin: 5rem auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .sender {
+            display: block;
+            background: hotpink;
+            color:black;
+            padding:.5rem;
+            border-radius: 5px;
+            margin: .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btnContainer">
+        <button onclick="fetchMail()">Get A New Mail</button>
+        <button onclick="chkmsg()">Refresh Messages</button>
+        <button onclick="other()">other Fn CHk</button>
+    </div>
+    <div class="responsive">
+        <h2 class="contents mail">mail-address</h2>
+        <button class="contents btn">Copy Mail</button>
+    </div>
+    <div class="senderCont" id="allmails">
+
+        
+    </div>
+</body>
+<script>
+    let email = document.querySelector('.mail');
+    let detail = {
+        //alias: "q4fsd4+7s0p23n6kq2ok"
+        // email_addr: "onvhibnp@guerrillamailblock.com"
+        // email_timestamp: 1640186201
+        // sid_token: "8dbv6hnjsdo35rrfch312ref6n"
+        "mail": "hello",
+        "tok": "hello",
+        "url": "https://api.guerrillamail.com/ajax.php?f=",
+        "get": "get_email_address&lang=en",
+        "update": "check_email&seq=0&sid_token="
+    };
+    let mails = {
+        "mailsLen" : 0,
+
+        }
+    console.log(detail);
+
+    async function fetchMail() {
+        let response = await fetch(detail.url + detail.get);
+        // console.log(response.status); // 200
+        // console.log(response.statusText); // OK
+
+        if (response.status === 200) {
+            let data = await response.json();
+            detail.mail = data.email_addr;
+            detail.tok = data.sid_token;
+            //----||
+            email.innerText = detail.mail
+        }
+
+        else {
+            email.innerText = "Can't Get Any Mails Right Now!"
+        }
+    }
+    
+
+   
+
+        // https://api.guerrillamail.com/ajax.php?f=check_email&seq=0&sid_token=${detail.tok}
+        
+        async function chkmsg() {
+        let response = await fetch(detail.url + detail.update+detail.tok);
+        console.log(response);
+        if (response.status === 200) {
+            let data = await response.json();
+            mails.response = data;
+            mails.mailsLen = data.list.length();
+            console.warn("Data Fetched here is detail")
+            console.log(data);
+        }
+
+        else {
+            email.innerText = "Can't Update Mails Right Now!"
+        }
+    }
+
+function refreshDetails(){
+let mailsCont = document.getElementById('allmails');
+    for(let i=0; i<mails.mailsLen; i++){
+        mailsCont.innerHTML+=`
+        <span class="sender">Mail Address : </span>
+        <span class="sender">Subject :</span>
+        <span class="sender">Lorem ipsum dolor sit amet.</span>
+
+        <p class = short-note>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum enim, ullam labore beatae atque provident
+            expedita mollitia tenetur eaque tempore odit! Perferendis debitis itaque sapiente quae? Ullam nihil quos
+            reiciendis?
+        </p>
+        `
+    }
+}
+
+
+</script>
+
+</html>

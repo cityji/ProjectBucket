@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="./logo/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./logo/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./logo/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./logo/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./logo/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./logo/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./logo/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./logo/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./logo/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./logo/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./logo/favicon-16x16.png">
+    <link rel="manifest" href="./logo/manifest.json">
+    <meta name="msapplication-TileColor" content="#d8709380">
+    <meta name="msapplication-TileImage" content="./logo/ms-icon-144x144.png">
+    <meta name="theme-color" content="#d8709380">
+    <title>World Info</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+<nav class="container">
+    <div class=" itm " id="logo">
+        <span>W</span>orld <span>I</span>nfo
+    </div>
+<div class="itm">
+    <input type="text" placeholder="Explore Info">
+    <button style="color: rgba(78, 74, 74, 0.949);" onclick="search.value=''">Clear</button>
+</div>
+<div class="itm"></div>
+</nav>
+<ul style="display: none;">
+    <li>Country</li>
+    <li>Capital</li>
+    <li>Currency</li>
+    <li>Language</li>
+    <li>Religion</li>
+</ul>
+    <table border="0">
+        <tbody>
+            <tr>
+                <td>Afghanistan</td>
+                <td>Kabul</td>
+                <td>Afghani</td>
+                <td>Pashto, Dari (Persian)</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Albania</td>
+                <td>Tirana</td>
+                <td>Lek</td>
+                <td>Albanian</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Algeria</td>
+                <td>Algiers</td>
+                <td>Algerian Dinar</td>
+                <td>Arabic; Tamazight; French</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Andorra</td>
+                <td>Andorra la Vella</td>
+                <td>Euro</td>
+                <td>Catalan</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Angola</td>
+                <td>Luanda</td>
+                <td>Kwanza</td>
+                <td>Portuguese</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Antigua &amp; Barbuda</td>
+                <td>Saint John's</td>
+                <td>East Caribbean Dollar</td>
+                <td>English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Argentina</td>
+                <td>Buenos Aires</td>
+                <td>Argentine Peso</td>
+                <td>Spanish</td>
+                <td>Christianity </td>
+            </tr>
+            <tr>
+                <td>Armenia</td>
+                <td>Yerevan</td>
+                <td>Dram</td>
+                <td>Armenian</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Australia</td>
+                <td>Canberra</td>
+                <td>Australian Dollar</td>
+                <td>English</td>
+                <td>Christianity </td>
+            </tr>
+            <tr>
+                <td>Austria</td>
+                <td>Vienna</td>
+                <td>Euro</td>
+                <td>German</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Azerbaijan</td>
+                <td>Baku</td>
+                <td>Manat</td>
+                <td>Azerbaijani</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>The Bahamas</td>
+                <td>Nassau</td>
+                <td>Bahamian Dollar</td>
+                <td>English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Bahrain</td>
+                <td>Manama</td>
+                <td>Bahraini Dinar</td>
+                <td>Arabic</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Bangladesh</td>
+                <td>Dhaka</td>
+                <td>Taka</td>
+                <td>Bangla</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Barbados</td>
+                <td>Bridgetown</td>
+                <td>Barbadian Dollar</td>
+                <td>English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Belarus</td>
+                <td>Minsk</td>
+                <td>Belarusian Ruble</td>
+                <td>Belarusian; Russian</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Belgium</td>
+                <td>Brussels</td>
+                <td>Euro</td>
+                <td>Dutch; French; German</td>
+                <td>Secular</td>
+            </tr>
+            <tr>
+                <td>Belize</td>
+                <td>Belmopan</td>
+                <td>Belize Dollar</td>
+                <td>English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Benin</td>
+                <td>Porto-Novo</td>
+                <td>West African CFA Franc</td>
+                <td>French</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Bhutan</td>
+                <td>Thimphu</td>
+                <td>Ngultrum</td>
+                <td>Dzongkha</td>
+                <td>Buddhism, Hindu</td>
+            </tr>
+            <tr>
+                <td>Bosnia &amp; Herzegovina</td>
+                <td>Sarajevo</td>
+                <td>Convertible Mark</td>
+                <td>Bosnian; Croatian; Serbian</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Botswana</td>
+                <td>Gaborone</td>
+                <td>Pula</td>
+                <td>English; Tswana</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Brazil</td>
+                <td>Brasilia</td>
+                <td>Real</td>
+                <td>Portuguese</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Brunei</td>
+                <td>Bandar Seri Begawan</td>
+                <td>Brunei Dollar</td>
+                <td>Malay</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Bulgaria</td>
+                <td>Sofia</td>
+                <td>Lev</td>
+                <td>Bulgarian</td>
+                <td>Secular</td>
+            </tr>
+            <tr>
+                <td>Burkina Faso</td>
+                <td>Ouagadougou</td>
+                <td>West African CFA Franc</td>
+                <td>French</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Burundi</td>
+                <td>Bujumbura</td>
+                <td>Burundi Franc</td>
+                <td>Kirundi; French</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Cambodia</td>
+                <td>Phnom Penh</td>
+                <td>Riel</td>
+                <td>Khmer</td>
+                <td>Buddhism</td>
+            </tr>
+            <tr>
+                <td>Cameroon</td>
+                <td>Yaoundé</td>
+                <td>Central African CFA Franc</td>
+                <td>French; English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Canada</td>
+                <td>Ottawa</td>
+                <td>Canadian Dollar</td>
+                <td>English; French</td>
+                <td>Christianity </td>
+            </tr>
+            <tr>
+                <td>Cape Verde</td>
+                <td>Praia</td>
+                <td>Cape Verdean Escudo</td>
+                <td>Portuguese</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Central African Republic</td>
+                <td>Bangui</td>
+                <td>Central African CFA Franc</td>
+                <td>Sango; French</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Chad</td>
+                <td>N'Djamena</td>
+                <td>Central African CFA Franc</td>
+                <td>French; Arabic</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Chile</td>
+                <td>Santiago</td>
+                <td>Chilean Peso</td>
+                <td>Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>China</td>
+                <td>Beijing</td>
+                <td>Chinese Yuan</td>
+                <td>Mandarin</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td>Colombia</td>
+                <td>Bogota</td>
+                <td>Colombian Peso</td>
+                <td>Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Comoros</td>
+                <td>Moroni</td>
+                <td>Comorian Franc</td>
+                <td>Comorian; Arabic; French</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Democratic Republic of the Congo</td>
+                <td>Kinshasa</td>
+                <td>Congolese Franc</td>
+                <td>French</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Republic of the Congo</td>
+                <td>Brazzaville</td>
+                <td>Central African CFA Franc</td>
+                <td>French</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td>Costa Rica</td>
+                <td>San Jose</td>
+                <td>Colon</td>
+                <td>Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Cote d'Ivoire (Ivory Coast)</td>
+                <td>Yamoussoukro; Abidjan</td>
+                <td>West African CFA Franc</td>
+                <td>French</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Croatia</td>
+                <td>Zagreb</td>
+                <td>Croatian</td>
+                <td>Kuna</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Cuba</td>
+                <td>Havana</td>
+                <td>Cuban Peso</td>
+                <td>Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Cyprus</td>
+                <td>Nicosia</td>
+                <td>Euro</td>
+                <td>Greek; Turkish</td>
+                <td>Christianity, Islam</td>
+            </tr>
+            <tr>
+                <td>Czech Republic</td>
+                <td>Prague</td>
+                <td>Czech Koruna</td>
+                <td>Czech; Slovak</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td>Denmark</td>
+                <td>Copenhagen</td>
+                <td>Danish Krone</td>
+                <td>Danish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Djibouti</td>
+                <td>Djibouti City</td>
+                <td>Djiboutian Franc</td>
+                <td>Arabic; French</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Dominica</td>
+                <td>Roseau</td>
+                <td>East Caribbean Dollar</td>
+                <td>English; French; Antillean Creole</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Dominican Republic</td>
+                <td>Santo Domingo</td>
+                <td>Dominican Peso</td>
+                <td>Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>East Timor (Timor-Leste)</td>
+                <td>Dili</td>
+                <td>United States Dollar</td>
+                <td>Tetum; Portuguese</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Ecuador</td>
+                <td>Quito</td>
+                <td>United States Dollar</td>
+                <td>Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Egypt</td>
+                <td>Cairo</td>
+                <td>Egyptian Pound</td>
+                <td>Arabic</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>El Salvador</td>
+                <td>San Salvador</td>
+                <td>United States Dollar</td>
+                <td>Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Equatorial Guinea</td>
+                <td>Malabo</td>
+                <td>Central African CFA Franc</td>
+                <td>Spanish; French; Portuguese</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Eritrea</td>
+                <td>Asmara</td>
+                <td>Nakfa</td>
+                <td>Arabic; Tigrinya; English</td>
+                <td>Christianity, Islam</td>
+            </tr>
+            <tr>
+                <td>Estonia</td>
+                <td>Tallinn</td>
+                <td>Estonian Kroon; Euro</td>
+                <td>Estonian</td>
+                <td>Secular</td>
+            </tr>
+            <tr>
+                <td>Ethiopia</td>
+                <td>Addis Ababa</td>
+                <td>Birr</td>
+                <td>Amharic</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Fiji</td>
+                <td>Suva</td>
+                <td>Fijian Dollar</td>
+                <td>English; Bau Fijian; Hindi</td>
+                <td>Christianity, Hindu, Islam</td>
+            </tr>
+            <tr>
+                <td>Finland</td>
+                <td>Helsinki</td>
+                <td>Euro</td>
+                <td>Finnish; Swedish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>France</td>
+                <td>Paris</td>
+                <td>Euro; CFP Franc</td>
+                <td>French</td>
+                <td>Secular</td>
+            </tr>
+            <tr>
+                <td>Gabon</td>
+                <td>Libreville</td>
+                <td>Central African CFA Franc</td>
+                <td>French</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>The Gambia</td>
+                <td>Banjul</td>
+                <td>Dalasi</td>
+                <td>English</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Georgia</td>
+                <td>Tbilisi</td>
+                <td>Lari</td>
+                <td>Georgian</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Germany</td>
+                <td>Berlin</td>
+                <td>Euro</td>
+                <td>German</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Ghana</td>
+                <td>Accra</td>
+                <td>Ghanaian Cedi</td>
+                <td>English</td>
+                <td>Christianity, Islam</td>
+            </tr>
+            <tr>
+                <td>Greece</td>
+                <td>Athens</td>
+                <td>Euro</td>
+                <td>Greek</td>
+                <td>(Christianity) Orthodoxy</td>
+            </tr>
+            <tr>
+                <td>Grenada</td>
+                <td>St. George's</td>
+                <td>East Caribbean Dollar</td>
+                <td>English; Patois</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Guatemala</td>
+                <td>Guatemala City</td>
+                <td>Quetzal</td>
+                <td>Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Guinea</td>
+                <td>Conakry</td>
+                <td>Guinean Franc</td>
+                <td>French</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Guinea-Bissau</td>
+                <td>Bissau</td>
+                <td>West African CFA Franc</td>
+                <td>Portuguese</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Guyana</td>
+                <td>Georgetown</td>
+                <td>Guyanese Dollar</td>
+                <td>English</td>
+                <td>Christianity, Hindu, Islam</td>
+            </tr>
+            <tr>
+                <td>Haiti</td>
+                <td>Port-au-Prince</td>
+                <td>Gourde</td>
+                <td>Haitian Creole; French</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Honduras</td>
+                <td>Tegucigalpa</td>
+                <td>Lempira</td>
+                <td>Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Hungary</td>
+                <td>Budapest</td>
+                <td>Forint</td>
+                <td>Hungarian</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Iceland</td>
+                <td>Reykjavik</td>
+                <td>Icelandic Krona</td>
+                <td>Icelandic</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>India</td>
+                <td>New Delhi</td>
+                <td>Indian Rupee</td>
+                <td>Hindi; English</td>
+                <td>Secular</td>
+            </tr>
+            <tr>
+                <td>Indonesia</td>
+                <td>Jakarta</td>
+                <td>Rupiah</td>
+                <td>Indonesian</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Iran</td>
+                <td>Tehran</td>
+                <td>Rial</td>
+                <td>Persian</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Iraq</td>
+                <td>Baghdad</td>
+                <td>Iraqi Dinar</td>
+                <td>Arabic; Kurdish</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Republic of Ireland</td>
+                <td>Dublin</td>
+                <td>Euro</td>
+                <td>English; Irish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Israel</td>
+                <td>Jerusalem</td>
+                <td>Shekel</td>
+                <td>Hebrew; Arabic</td>
+                <td>Judaism, Christianity, Islam, Druze</td>
+            </tr>
+            <tr>
+                <td>Italy</td>
+                <td>Rome</td>
+                <td>Euro</td>
+                <td>Italian</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Jamaica</td>
+                <td>Kingston</td>
+                <td>Jamaican Dollar</td>
+                <td>English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Japan</td>
+                <td>Tokyo</td>
+                <td>Yen</td>
+                <td>Japanese</td>
+                <td>Buddhism or Shinto </td>
+            </tr>
+            <tr>
+                <td>Jordan</td>
+                <td>Amman</td>
+                <td>Jordanian Dinar</td>
+                <td>Arabic</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Kazakhstan</td>
+                <td>Astana</td>
+                <td>Tenge</td>
+                <td>Kazakh; Russian</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Kenya</td>
+                <td>Nairobi</td>
+                <td>Kenyan Shilling</td>
+                <td>Swahili; English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Kiribati</td>
+                <td>Tarawa Atoll</td>
+                <td>Kiribati Dollar</td>
+                <td>English; Gilbertese</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>North Korea</td>
+                <td>Pyongyang</td>
+                <td>North Korean Won</td>
+                <td>Korean</td>
+                <td>Secular</td>
+            </tr>
+            <tr>
+                <td>South Korea</td>
+                <td>Seoul</td>
+                <td>South Korean Won</td>
+                <td>Korean</td>
+                <td>Atheist (but some follow Buddhist &amp; Christian)</td>
+            </tr>
+            <tr>
+                <td>Kosovo</td>
+                <td>Pristina</td>
+                <td>Euro</td>
+                <td>Albanian; Serbian</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Kuwait</td>
+                <td>Kuwait City</td>
+                <td>Kuwaiti Dollar</td>
+                <td>Arabic; English</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Kyrgyzstan</td>
+                <td>Bishkek</td>
+                <td>Som</td>
+                <td>Kyrgyz; Russian</td>
+                <td>Islam, Russian Orthodoxy</td>
+            </tr>
+            <tr>
+                <td>Laos</td>
+                <td>Vientiane</td>
+                <td>Kip</td>
+                <td>Lao (Laotian)</td>
+                <td>Buddhism</td>
+            </tr>
+            <tr>
+                <td>Latvia</td>
+                <td>Riga</td>
+                <td>Lats</td>
+                <td>Latvian</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Lebanon</td>
+                <td>Beirut</td>
+                <td>Lebanese Pound</td>
+                <td>Arabic; French</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Lesotho</td>
+                <td>Maseru</td>
+                <td>Loti</td>
+                <td>Sesotho; English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Liberia</td>
+                <td>Monrovia</td>
+                <td>Liberian Dollar</td>
+                <td>English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Libya</td>
+                <td>Tripoli</td>
+                <td>Libyan Dinar</td>
+                <td>Arabic</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Liechtenstein</td>
+                <td>Vaduz</td>
+                <td>Swiss Franc</td>
+                <td>German</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Lithuania</td>
+                <td>Vilnius</td>
+                <td>Lithuanian Litas</td>
+                <td>Lithuanian</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Luxembourg</td>
+                <td>Luxembourg</td>
+                <td>Euro</td>
+                <td>German; French; Luxembourgish</td>
+                <td>Christianity (But it is a Secular Country)</td>
+            </tr>
+            <tr>
+                <td>Macedonia</td>
+                <td>Skopje</td>
+                <td>Macedonian Denar</td>
+                <td>Macedonian</td>
+                <td>Christianity, Islam</td>
+            </tr>
+            <tr>
+                <td>Madagascar</td>
+                <td>Antananarivo</td>
+                <td>Malagasy Ariary</td>
+                <td>Malagasy; French; English</td>
+                <td>Traditional Religion</td>
+            </tr>
+            <tr>
+                <td>Malawi</td>
+                <td>Lilongwe</td>
+                <td>Malawi Kwacha</td>
+                <td>English</td>
+                <td>Christianity, Islam</td>
+            </tr>
+            <tr>
+                <td>Malaysia</td>
+                <td>Kuala Lumpur</td>
+                <td>Ringgit</td>
+                <td>Malay</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Mali</td>
+                <td>Bamako</td>
+                <td>West African CFA Franc</td>
+                <td>French</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Malta</td>
+                <td>Valletta</td>
+                <td>Euro</td>
+                <td>Maltese; English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Marshall Islands</td>
+                <td>Majuro</td>
+                <td>United States Dollar</td>
+                <td>Marshallese; English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Mauritania</td>
+                <td>Nouakchott</td>
+                <td>Ouguiya</td>
+                <td>Arabic</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Mauritius</td>
+                <td>Port Louis</td>
+                <td>Mauritian Rupee</td>
+                <td>English</td>
+                <td>Christianity, Islam</td>
+            </tr>
+            <tr>
+                <td>Mexico</td>
+                <td>Mexico City</td>
+                <td>Mexican Peso</td>
+                <td>Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Federal States of Micronesia</td>
+                <td>Palikir</td>
+                <td>United States Dollar</td>
+                <td>English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Moldova</td>
+                <td>Chisinau</td>
+                <td>Moldovan Leu</td>
+                <td>Moldovan (Romanian)</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Monaco</td>
+                <td>Monaco</td>
+                <td>Euro</td>
+                <td>French; Italian; English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Mongolia</td>
+                <td>Ulaanbaatar</td>
+                <td>Togrog</td>
+                <td>Mongolian</td>
+                <td>Buddhism</td>
+            </tr>
+            <tr>
+                <td>Montenegro</td>
+                <td>Podgorica</td>
+                <td>Euro</td>
+                <td>Montenegrin</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Morocco</td>
+                <td>Rabat</td>
+                <td>Moroccan Dirham</td>
+                <td>Arabic</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Mozambique</td>
+                <td>Maputo</td>
+                <td>Mozambican Metical</td>
+                <td>Portuguese</td>
+                <td>Christianity, Islam</td>
+            </tr>
+            <tr>
+                <td>Myanmar (Burma)</td>
+                <td>Nypyidaw</td>
+                <td>Kyat</td>
+                <td>Burmese</td>
+                <td>Buddhism</td>
+            </tr>
+            <tr>
+                <td>Namibia</td>
+                <td>Windhoek</td>
+                <td>Namibian Dollar</td>
+                <td>English; Afrikaans; German</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Nauru</td>
+                <td>Yaren</td>
+                <td>Australian Dollar</td>
+                <td>English; Nauran</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Nepal</td>
+                <td>Kathmandu</td>
+                <td>Nepalese Rupee</td>
+                <td>Nepali</td>
+                <td>Hindu, Buddhism, Islam</td>
+            </tr>
+            <tr>
+                <td>Netherlands</td>
+                <td>Amsterdam; The Hague</td>
+                <td>Euro</td>
+                <td>Dutch</td>
+                <td>Christianity (But a Secular Country)</td>
+            </tr>
+            <tr>
+                <td>New Zealand</td>
+                <td>Wellington</td>
+                <td>New Zealand Dollar</td>
+                <td>English</td>
+                <td>Christianity (But a Secular Country)</td>
+            </tr>
+            <tr>
+                <td>Nicaragua</td>
+                <td>Managua</td>
+                <td>Cordoba</td>
+                <td>Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Niger</td>
+                <td>Niamey</td>
+                <td>West African CFA Franc</td>
+                <td>French</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Nigeria</td>
+                <td>Abuja</td>
+                <td>Naira</td>
+                <td>English</td>
+                <td>Christianity, Islam</td>
+            </tr>
+            <tr>
+                <td>Norway</td>
+                <td>Oslo</td>
+                <td>Norwegian Krone</td>
+                <td>Norwegian</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Oman</td>
+                <td>Muscat</td>
+                <td>Omani Rial</td>
+                <td>Arabic</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Pakistan</td>
+                <td>Islamabad</td>
+                <td>Pakistani Rupee</td>
+                <td>Urdu; English</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Palau</td>
+                <td>Melekeok</td>
+                <td>United States Dollar</td>
+                <td>English; Palauan</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Panama</td>
+                <td>Panama City</td>
+                <td>Balboa</td>
+                <td>Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Papa New Guinea</td>
+                <td>Port Moresby</td>
+                <td>Papa New Guinean Kina</td>
+                <td>English; Tok Pisin; Hiri Motu</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Paraguay</td>
+                <td>Asuncion</td>
+                <td>Guarani</td>
+                <td>Spanish; Guarani</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Peru</td>
+                <td>Lima</td>
+                <td>Nuevo Sol</td>
+                <td>Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Philippines</td>
+                <td>Manila</td>
+                <td>Philippine Peso</td>
+                <td>Filipino; English</td>
+                <td>Christianity, Islam</td>
+            </tr>
+            <tr>
+                <td>Poland</td>
+                <td>Warsaw</td>
+                <td>Złoty</td>
+                <td>Polish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+                <td>Lisbon</td>
+                <td>Euro</td>
+                <td>Portuguese</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Qatar</td>
+                <td>Doha</td>
+                <td>Qatari Riyal</td>
+                <td>Arabic</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Romania</td>
+                <td>Bucharest</td>
+                <td>Romanian Rupee</td>
+                <td>Romanian</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Russia</td>
+                <td>Moscow</td>
+                <td>Ruble</td>
+                <td>Russian</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Rwanda</td>
+                <td>Kigali</td>
+                <td>Rwandan Franc</td>
+                <td>Kinyarwanda; French; English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Saint Kitts and Nevis</td>
+                <td>Basseterre</td>
+                <td>East Caribbean Dollar</td>
+                <td>English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Saint Lucia</td>
+                <td>Castries</td>
+                <td>East Caribbean Dollar</td>
+                <td>English; French</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Saint Vincent &amp; The Grenadines</td>
+                <td>Kingstown</td>
+                <td>East Caribbean Dollar</td>
+                <td>English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Samoa</td>
+                <td>Apia</td>
+                <td>Tala</td>
+                <td>Samoan; English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>San Marino</td>
+                <td>San Marino</td>
+                <td>Euro</td>
+                <td>Italian</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Sao Tome and Principe</td>
+                <td>Sao Tome</td>
+                <td>Dobra</td>
+                <td>Portuguese</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Saudi Arabia</td>
+                <td>Riyadh</td>
+                <td>Saudi Riyal</td>
+                <td>Arabic</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Senegal</td>
+                <td>Dakar</td>
+                <td>West African CFA Franc</td>
+                <td>French</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Serbia</td>
+                <td>Belgrade</td>
+                <td>Serbian Dinar</td>
+                <td>Serbian</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Seychelles</td>
+                <td>Victoria</td>
+                <td>Seychoellois Rupee</td>
+                <td>Seychellois Creole; French; English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Sierra Leone</td>
+                <td>Freetown</td>
+                <td>Leone</td>
+                <td>Krio; English</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Singapore</td>
+                <td>Singapore</td>
+                <td>Singapore Dollar</td>
+                <td>English; Malay; Mandarin Chinese</td>
+                <td>Buddhist, Christianity</td>
+            </tr>
+            <tr>
+                <td>Slovakia</td>
+                <td>Bratislava</td>
+                <td>Euro</td>
+                <td>Slovak</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Slovenia</td>
+                <td>Ljubljana</td>
+                <td>Euro</td>
+                <td>Slovene</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Solomon Islands</td>
+                <td>Honiara</td>
+                <td>Solomon Islands Dollar</td>
+                <td>Solomons Pijin</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Somalia</td>
+                <td>Mogadishu</td>
+                <td>Somali Shilling</td>
+                <td>Somali; Arabic</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>South Africa</td>
+                <td>Pretoria; Cape Town; Bloemfontein</td>
+                <td>Rand</td>
+                <td>Zulu; Xhosa; Afrikaans</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Spain</td>
+                <td>Madrid</td>
+                <td>Euro</td>
+                <td>Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Sri Lanka</td>
+                <td>Colombo</td>
+                <td>Sri Lankan Rupee</td>
+                <td>Sinhala; Tamil</td>
+                <td>Buddhist, Hindu, Islam</td>
+            </tr>
+            <tr>
+                <td>Sudan</td>
+                <td>Khartoum</td>
+                <td>Sudanese Pound</td>
+                <td>Arabic; English</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Suriname</td>
+                <td>Paramaribo</td>
+                <td>Surinamese Dollar</td>
+                <td>Dutch</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Swaziland</td>
+                <td>Mbabane</td>
+                <td>Lilangeni</td>
+                <td>English; SiSwati</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Sweden</td>
+                <td>Stockholm</td>
+                <td>Swedish Krona</td>
+                <td>Swedish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Switzerland</td>
+                <td>Berne</td>
+                <td>Swiss Franc</td>
+                <td>German; French; Italian</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Syria</td>
+                <td>Damascus</td>
+                <td>Syrian Pound</td>
+                <td>Arabic</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Taiwan</td>
+                <td>Taipei</td>
+                <td>New Taiwan Dollar</td>
+                <td>Mandarin</td>
+                <td>Polytheistic ancient Chinese religion, Buddhism</td>
+            </tr>
+            <tr>
+                <td>Tajikistan</td>
+                <td>Dushanbe</td>
+                <td>Somoni</td>
+                <td>Tajik; Russian</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Tanzania</td>
+                <td>Dar es Salaam; Dodoma</td>
+                <td>Tanzanian Schilling</td>
+                <td>Swahili</td>
+                <td>Islam, Christianity</td>
+            </tr>
+            <tr>
+                <td>Thailand</td>
+                <td>Bangkok</td>
+                <td>Thai Baht</td>
+                <td>Thai</td>
+                <td>Buddhism</td>
+            </tr>
+            <tr>
+                <td>Togo</td>
+                <td>Lome</td>
+                <td>West African CFA Franc</td>
+                <td>French</td>
+                <td>Traditional/Native religion, Christianity</td>
+            </tr>
+            <tr>
+                <td>Tonga</td>
+                <td>Nuku'alofa</td>
+                <td>Pa'anga</td>
+                <td>Tongan; English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Trinidad and Tobago</td>
+                <td>Port-of-Spain</td>
+                <td>Trinidad and Tobago Dollar</td>
+                <td>English</td>
+                <td>Christianity, Hindu, Islam</td>
+            </tr>
+            <tr>
+                <td>Tunisia</td>
+                <td>Tunis</td>
+                <td>Tunisian Dinar</td>
+                <td>Tunisian; French</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Turkey</td>
+                <td>Ankara</td>
+                <td>Turkish Lira</td>
+                <td>Turkish</td>
+                <td>Islam </td>
+            </tr>
+            <tr>
+                <td>Turkmenistan</td>
+                <td>Ashgabat</td>
+                <td>Turkmen New Manat</td>
+                <td>Turkmen; Russian</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Tuvalu</td>
+                <td>Vaiaku</td>
+                <td>Tuvaluan Dollar</td>
+                <td>Tuvaluan; English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Uganda</td>
+                <td>Kampala</td>
+                <td>Ugandan Shilling</td>
+                <td>Swahili; English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Ukraine</td>
+                <td>Kiev</td>
+                <td>Hryvnia</td>
+                <td>Ukrainian; Russian</td>
+                <td>Eastern Orthodoxy</td>
+            </tr>
+            <tr>
+                <td>United Arab Emirates</td>
+                <td>Abu Dhabi</td>
+                <td>Dirham</td>
+                <td>Arabic</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>United Kingdom</td>
+                <td>London</td>
+                <td>Pound Sterling</td>
+                <td>English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>United States of America</td>
+                <td>Washington D.C.</td>
+                <td>United States Dollar</td>
+                <td>English; Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Uruguay</td>
+                <td>Montevideo</td>
+                <td>Uruguayan Peso</td>
+                <td>Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Uzbekistan</td>
+                <td>Tashkent</td>
+                <td>Uzbekistan Som</td>
+                <td>Uzbek; Russian</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Vanuatu</td>
+                <td>Port-Vila</td>
+                <td>Vanuatu Vatu</td>
+                <td>Bislama; English; French</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Vatican City</td>
+                <td>Vatican City</td>
+                <td>Euro</td>
+                <td>Latin; Italian</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Venezuela</td>
+                <td>Caracas</td>
+                <td>Bolivar Fuerte</td>
+                <td>Spanish</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Vietnam</td>
+                <td>Hanoi</td>
+                <td>Dong</td>
+                <td>Vietnamese</td>
+                <td>Native religious practice, Christianity</td>
+            </tr>
+            <tr>
+                <td>Yemen</td>
+                <td>Sanaa</td>
+                <td>Yemeni Rial</td>
+                <td>Arabic</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Zambia</td>
+                <td>Lusaka</td>
+                <td>Zambian Kwacha</td>
+                <td>English</td>
+                <td>Christianity</td>
+            </tr>
+            <tr>
+                <td>Zimbabwe</td>
+                <td>Harare</td>
+                <td>United States Dollar</td>
+                <td>English</td>
+                <td>Christianity</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="./fn.js"></script>
+
+</html>

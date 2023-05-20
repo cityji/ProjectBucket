@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./favicon.ico">
+    <title>G U A R D | Temp Mail</title>
+    <style>
+      /* INLINE CSS */
+
+    </style>
+</head>
+
+<body>
+    <div class="btnContainer">
+        <button onclick="fetchMail()">Get A New Mail</button>
+        <button onclick="chkmsg()">Refresh Messages</button>
+        <button onclick="other()">other Fn CHk</button>
+    </div>
+    <div class="responsive">
+        <span class="contents mail">mail-address</span>
+        <button class="contents btn" onclick=" btn = document.querySelector('.responsive>.mail').innerText; navigator.clipboard.writeText(btn); this.focus = this.innerText ='Copied !';">Copy Mail</button>
+    </div>
+
+    <!-- mails list  --->
+
+    <div class="senderCont hidden" id="allmails">
+
+    </div>
+
+</body>
+<script src="./fn.js">
+// INLINE JAVASCRIPT
+</script>
+
+</html>

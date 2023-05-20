@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(34deg, hsla(39, 100%, 71%, 1) 0%, hsla(216, 100%, 62%, 1) 100%);
+    min-height: 100vh;
+}
+
+
+.responsive {
+    background: grey;
+    padding: 1rem;
+    border-radius: 5px;
+    color: chartreuse;
+    font-size: 2rem;
+    max-width: 80vw;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px black;
+    word-wrap: anywhere;
+    text-align: center;
+}
+
+
+
+.btnContainer {
+    background: linear-gradient(20deg, royalblue 0%, hotpink 100%);
+    box-shadow: 0 0 20px crimson;
+    padding: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: flex-end;
+}
+
+.btnContainer>button,
+.btn {
+    font-size: 2rem;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.btnContainer>button:hover,
+.btn:hover,
+.btn:active {
+    background: greenyellow;
+    color: black;
+    box-shadow: 0 0 15px azure;
+}
+
+/* sender Details */
+.senderCont {
+    background: grey;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    width: calc(80vw - 5%);
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sender {
+    display: block;
+    background: hotpink;
+    color: black;
+    padding: .5rem;
+    border-radius: 5px;
+    margin: .5rem;
+    box-shadow: 0 0 5px black;
+}
+
+.sender>span {
+    color: azure;
+    padding: .3rem;
+    border-radius: 10px;
+    background: grey;
+}
+
+.short-note {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    background: silver;
+    box-shadow: 0 0 10px black;
+    padding: .3rem;
+    border-radius: 5px;
+}
+@media only screen and (max-width:500px) {
+    .responsive {
+    justify-content: center;
+    }
+    
+    .responsive>.btn {
+        margin-top: 1rem;
+    }
+
+    .btnContainer {
+        justify-content: center;
+    }
+
+}

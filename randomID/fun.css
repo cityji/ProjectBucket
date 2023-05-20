@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all .4s ease;
+}
+body {
+    background: linear-gradient(90deg, hsla(171, 87%, 67%, 1) 0%, hsla(236, 100%, 72%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(171, 87%, 67%, 1) 0%, hsla(236, 100%, 72%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(171, 87%, 67%, 1) 0%, hsla(236, 100%, 72%, 1) 100%);
+    min-height: 100vh;
+}
+ul {
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.3rem;
+    min-width: 20rem;
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    background: azure;
+    color: black;
+    align-items: center;
+    gap: .5rem;
+}
+
+ul:hover,
+ul:focus,
+ul:focus-within {
+    background: linear-gradient(90deg, hsla(171, 87%, 67%, .5) 0%, hsla(236, 100%, 72%, .5) 100%);
+    background: -moz-linear-gradient(90deg, hsla(171, 87%, 67%, .5) 0%, hsla(236, 100%, 72%, .5) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(171, 87%, 67%, .5) 0%, hsla(236, 100%, 72%, .5) 100%);
+    box-shadow: 5px 0px 20px black;
+    transform: scale(1.1);
+}
+ul:hover *,
+ul:focus *,
+ul:focus-within *{
+   background:bisque;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+ul span:first-child {
+    background: darkblue;
+    color: lemonchiffon;
+    transform: translateY(-50%);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+cap,
+data {
+    display: block;
+}
+
+set {
+    border: 2px solid salmon;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+
+
+.card {
+    padding: .2rem 0px;
+    background: rgba(0, 0, 0, 0.286);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.card>img {
+    background: red;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 25%;
+}

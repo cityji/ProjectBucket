@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Best Wishes</title>
+    <link rel="icon" href="./assets/boy(1).png">
+    <link rel="stylesheet" href="wish.css">
+    <style>
+        audio {
+            display: block;
+            margin: auto;
+            border-radius: 7px;
+            opacity: 40%;
+        }
+
+        audio:focus,
+        audio:hover,
+        audio:active {
+            opacity: 100%;
+        }
+
+        #birthday {
+            display: block;
+            position: absolute;
+            animation: celebrate 3s ease;
+        }
+
+        @keyframes celebrate {
+            from {
+                z-index: 3;
+            }
+
+            to {
+                z-index: 1;
+            }
+        }
+
+        .warper {
+            animation: fade 3.3s ease;
+            transition: 1s ease;
+            animation-delay: 3s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0%;
+            }
+
+            to {
+                opacity: 100%;
+            }
+        }
+
+        /* flickering color of  wish */
+
+        #flick {
+            position: relative;
+            background: linear-gradient(40deg, pink, azure, blue);
+            background-clip: text;
+            background-size: 500% 500%;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: none;
+            animation: flicker infinite 3s ease; 
+            font-weight: bolder;
+        }
+
+        .top::before {
+            background: linear-gradient(40deg, red, azure, blue);
+            background-size: 400% 400%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: flicker infinite 4s ease;
+        }
+
+        @keyframes flicker {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body ontouchstart="playthis(event) ">
+    <canvas id="birthday"></canvas> <!-- Birthdat styling And Top Bar section -->
+    <div class="warper">
+        <div class="top">
+            <img src="./assets/up.png" alt="beautiful top decoration">
+        </div>
+        <!-- SlideShow Images Section -->
+        <section>
+            <div id="slideshow">
+                <div class="images">
+                    <img class="sir" src="./assets/sir/sir-3.jpg">
+                    <img class="sir" src="./assets/sir/sir-7.jpg">
+                    <img class="sir" src="./assets/sir/sir-2.jpg">
+                    <img class="sir" src="./assets/sir/sir-8.jpg">
+                    <img class="sir" src="./assets/sir/sir-12.jpg">
+                    <img class="sir" src="./assets/sir/sir-10.jpg">
+                    <img class="sir" src="./assets/sir/sir-6.jpg">
+                    <img class="sir" src="./assets/sir/sir-5.jpg">
+                    <img class="sir" src="./assets/sir/sir-4.jpg">
+                    <img class="sir" src="./assets/sir/sir-1.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section class="punchline">
+            बी. सी. ए. वर्ग में हम छात्रों की ओर से आप को,<span>जन्म दिन की हार्दिक शुभकामनाएँ</span>
+            <hr>
+            हम सभी आप के जीवन की मंगल कामना करते है ।
+        </section>
+        <br> <!-- Comments section -->
+        <section class="comments">
+            <fieldset class="holder">
+                <fieldset class="line">
+                    <legend class="auther">Dhruv Pandey</legend>
+                    <p><span>❛❛</span> Happy Birthday sir ! 🎂🎂 I hope you have a great day and year ahead is full of
+                        many blessings 🎂
+                    </p>
+                </fieldset>
+                <br>
+                <legend id="comment">comments</legend>
+                <fieldset class="line">
+                    <legend class="auther">nitin gupta</legend>
+                    <p><span>❛❛</span>
+                        Happy birthday sir <br><br> आप को जन्म दिन की ढेर सारी शुभकामनाएँ ।
+                    </p>
+                </fieldset>
+
+                <fieldset class="line">
+                    <legend class="auther">Meghana Tamrkar</legend>
+                    <p><span>❛❛</span> You are a teacher, a friend, a philosopher and a guide. What more one can ask
+                        for! We are lucky to have you as our teacher. Thank you! Happy birthday sir jii😄
+                        You are always available for the help sir whenever i am stuked in worst situations! Once again
+                        Thanks sir jii and may god give you all the happiness you deserve.😇
+                    </p>
+                </fieldset>
+
+                
+                     <fieldset class="line">
+                    <legend class="auther">Rajveer Singh</legend>
+                    <p><span>❛❛</span> Happy birthday sir
+                    </p>
+                </fieldset> 
+
+           
+
+                <fieldset class="line">
+                    <legend class="auther">nikhil tiwari</legend>
+                    <p><span>❛❛</span> You kept saying, <br> 'You can do better' and those words made me work harder.
+                        <br>
+                        <br>
+                        Your lessons are the best gift to me, I am too small to gift you anything.
+                        Therefore, sending warm wishes to you on your birthday. May you have the best birthday ever.
+                        <br><br>
+                        <b id="flick">Happy birthday Sir!</b>
+                    </p>
+                </fieldset>
+            </fieldset>
+            <!-- Bottom Bar section -->
+            <audio src="./assets/sir/Bday-Export.mp3" controls autoplay norepeat></audio>
+        </section>
+        <br>
+        <section id="info">
+            <div class="content">
+                <h4 style="text-align: center;">Made With
+                    <span style="color: orangered; font-size:2.3rem;font-weight: bolder;">&hearts;</span> by
+                    <br><br>
+                    Nikhil Tiwari
+                    <span style="display:block;text-align:center; color:orangered">&</span>
+                    Team NNDC
+                </h4>
+            </div>
+        </section>
+
+        <img class="bottom" src="./assets/down.png" alt="bottom decoration">
+    </div>
+
+</body>
+<script src="./wish.js"></script>
+<script>
+    var indexValue = 0;
+    function slideShow() {
+        setTimeout(slideShow, 2500);
+        var x;
+        const img = document.querySelectorAll(".sir");
+        for (x = 0; x < img.length; x++) {
+            img[x].style.display = "none";
+        }
+        indexValue++;
+        if (indexValue > img.length) { indexValue = 1 }
+        img[indexValue - 1].style.display = "block";
+    }
+    slideShow();
+</script>
+<!-- all goog Now let's Pay the Song -->
+<script>
+    window.addEventListener("onload", playthis);
+    window.addEventListener("click", playthis);
+    window.onscroll = playthis();
+    function playthis() {
+        document.querySelector("audio").play();
+    }
+
+</script>
+</html>

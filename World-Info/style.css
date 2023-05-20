@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  /* border: none; */
+}
+body {
+  background: linear-gradient(90deg, hsla(332, 53%, 82%, 1) 0%, hsla(176, 57%, 89%, 1) 100%);
+  color: aliceblue;
+}
+
+tbody{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  gap:1rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+tr{
+  height: 20rem;
+  width: 15rem;
+  background: linear-gradient(90deg, rgba(239, 113, 155, 1) 0%, rgba(250, 146, 112, 1) 100%);
+  display: flex;
+  flex-wrap: wrap;
+  padding:1rem;
+  border-radius: 10px;
+  color:black;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  animation: all 1s ease;
+}
+tr:nth-child(2n){
+  background: linear-gradient(20deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+}
+tr::before{
+  content: '';
+  background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+opacity: 32%;
+  position: absolute;
+  inset: 0;
+  margin: .7rem;
+  border-radius: 10px;
+}
+tr *{
+  padding: 1.5rem;
+  padding-left: .5rem;
+  width: 50%;
+  height: 3.5rem;
+}
+tr span{
+  border-radius: 10px;
+  padding: .3rem;
+  background: #000;
+  color: wheat;
+}
+/* navbar Designing */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  background: linear-gradient(
+    90deg,
+    hsla(0, 100%, 67%, 1) 0%,
+    hsla(0, 100%, 89%, 1) 100%
+  );
+}
+#logo {
+  background: rgba(0, 0, 0, 0.747);
+  height: 4rem;
+  color: azure;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.59);
+  border-radius: 70% 30% 0%;
+}
+.itm,
+.itm * {
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 0.2rem 0.5rem;
+}
+.itm > span {
+  padding: 0px;
+  color: crimson;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  font-style: italic;
+  text-shadow: 0 0 5px azure;
+}
+
+.hide {
+  opacity: 0%;
+  display: none;
+}
+
+.show {
+  opacity: 100%;
+  display: flex;
+}
+@media only screen and (max-width:400px){
+  input{
+    max-width: 90vw;
+    margin:1rem 0px;
+  }
+}
+@media only screen and (max-width:550px) and (min-width:401px){
+  input{
+    max-width: 60vw;
+    margin: 1rem 0px;
+  }
+  tr{
+    width: 80vw;
+  }
+}

@@ -1,0 +1,284 @@
+  /* color scheme : 
+        orange 
+        pink 
+        black;
+
+        */
+        /* @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap'); */
+        @import url('https://fonts.googleapis.com/css2?family=Arya:wght@700&family=Ubuntu&family=Gotu&family=Style+Script&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            cursor:default;
+        }
+
+        .warper {
+            min-height: 100vh;
+            position: relative;
+            /* background: pink; */
+        }
+        .top{
+            /* background: white; */ 
+            position: relative;
+        }
+        .top::before{
+            content:"Best Wishes";
+            position:absolute;
+            inset: 0;
+            /* background: linear-gradient(40deg,red,azure,blue); */ 
+                                                    /* now managed by flickerin main */
+            font-size:5.3vmax;
+            text-align: center;
+            font-weight:bolder;
+            font-family: 'Style Script', cursive;
+            /* text-transform: uppercase; */
+        }
+        /* .warper::before{
+            content:"";
+            position: absolute;
+            inset: 0;
+            height:15%;
+            background-image: url(./assets/up.png);
+            background-size:21%;
+            background-position: center bottom;
+
+        }
+        .warper::after{
+            content:"";
+            position: absolute;
+            bottom:0px;
+            height:15%;
+            min-width: 100vw;
+            background-image: url(./assets/down.png);
+            background-size:10px;
+            background-position: center top;
+        } */
+        div>img {
+            width: 100vw;
+            max-height: 15vh;
+        }
+
+        .bottom {
+            position: relative;
+            bottom: 0px;
+        }
+
+
+        /* slider */
+
+        #slideshow {
+            height: 300px;
+            background: linear-gradient(45deg, hotpink, skyblue, orangered);
+            margin: 10px;
+            padding: 15px;
+            border-radius: 7px;
+            overflow: hidden;
+            transition: all .5s ease;
+            
+        }
+        
+        #slideshow img {
+            max-height: none;
+            /* max-width: none; */
+            /* max-height: 280px; */
+            width: 100%;
+            height: auto;
+            border-radius: 7px;
+            box-shadow: 0 0 5px black;
+            transition: all .5s ease;
+        }
+
+        /* End slider */
+        
+        .punchline {
+            background: skyblue;
+            margin: 2rem;
+            max-width: 650px;
+            padding: 1rem;
+            border-radius: 7px;
+            color: black;
+            font-size: 1.2rem;
+            font-weight: bolder;
+            font-family: 'Gotu', cursive;
+            letter-spacing: 1.3px;
+            text-shadow: 0 0 4px azure;
+            text-align: center;
+            box-shadow: 0 0 1rem azure;
+        }
+        
+        .punchline span {
+            font-family: 'Arya',sans-serif;
+            font-weight: 800;
+            text-shadow: 0 0 7px azure;
+            display: block;
+            font-size: 1.3rem;
+            color: red;
+            font-weight: bolder;
+        }
+
+        .punchline hr {
+            margin: 10px 0px;
+        }
+
+        .comments {
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            padding-bottom: 3rem;
+            background:linear-gradient(#f8ffe5,#4FB0C6,transparent);
+            padding:2rem 0px;
+        }
+        
+        .comments .holder {
+            margin: 2rem;
+
+            border-radius: 7px;
+            border: 3px solid;
+        }
+
+        /* making holder items( comments ) responsive  */
+        .comments .holder {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        #comment {
+            background: linear-gradient(52deg, orange, hotpink);
+            padding: 10px;
+            padding-top:15px;           /* To remove unknown spade taken by font itself :) */
+            margin: 1rem auto;
+            border-radius: 7px;
+            border: 3px solid;
+            border-top: none;
+            border-bottom: none;
+
+            /* text styling */
+            font-size: 2.3rem;
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: dodgerblue;
+            text-shadow: 0 0 5px lightyellow;
+        }
+
+        .line {
+            padding: 1rem;
+            margin:1rem;
+            border-radius: 7px;
+            font-size: clamp(16px, 5vw, 2rem);
+            max-width: 427px;
+
+        }
+
+        .line:nth-child(1) , .line:last-child {
+            background: linear-gradient(40deg, #ef4975, #ff8a38) !important;
+            color: aliceblue !important;
+            letter-spacing: 0.5px;
+            text-shadow: 0 0 3px black;
+            font-family: 'Ubantu' , Arial, Helvetica, sans-serif;
+        }
+        .line:last-child b{
+            display: block;
+            text-align: center;
+            font-weight:bolder;
+            font-family: 'Style Script', cursive;
+            letter-spacing: 5px;
+            font-size:2rem;
+        }
+
+        .line:nth-child(odd) {
+            /* background: rgba(255, 68, 0, 0.511); */
+            background: rgba(190, 183, 164, 0.841);
+        }
+
+        .line:nth-child(even) {
+            /* background: rgba(135, 207, 235, 0.511); */
+            background-color: rgba(255, 255, 250, 0.841);
+            color:black;
+        }
+
+        .auther {
+            background: gold;
+            color:black;
+            text-shadow: none;
+            min-width: 5rem;
+            padding: 10px;
+            border-radius: 8px;
+            text-transform: capitalize;
+            font-size: 1.3rem;
+        }
+        .line p>span{
+            font-size:2.3rem;
+            letter-spacing: 1px;
+            text-shadow: 0 0 3px black;
+            
+        }
+
+        @media only screen and (min-width:700px) {
+            .punchline {
+                margin: 2rem auto;
+            }
+        }
+
+        @media only screen and (min-width:325px) {
+            /* slider */
+
+            .content {
+                max-height: 30rem;
+                height: 80%;
+                width: auto;
+                overflow: hidden;
+            }
+        }
+
+        @media only screen and (min-width:500px) {
+            .holder{
+                justify-content: space-around !important;
+            }
+            .comments .holder * {
+                display: grid;
+                place-items: center;
+            }
+
+            /* slidebar issues :( */
+
+            #slideshow {
+                transition:all .5s ease;
+                max-width:60vw;
+                width: max-content;
+                height: 400px;
+                margin:0px auto;
+                
+            }
+
+            #slideshow img {
+                height: 100%;
+                width: auto;
+                margin: 0px auto;
+                
+            }
+        }
+        /* madw with section */
+
+        .content {
+            background: rgba(240, 255, 255, 0.452);
+            padding: 30px;
+            border-radius: 10px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.5rem;
+            text-align: justify;
+            text-shadow: 0 0 2px black;
+        }
+        #info {
+            background-image: linear-gradient(180deg,whitesmoke, hsla(214, 75%, 14%, 0.888),#09203f);
+            /* box-shadow: 0 0 1rem grey; */
+            opacity:100%;
+            color: azure;
+            padding: 30px;
+        }
+        .bottom{
+            background: #09203f;
+        }
